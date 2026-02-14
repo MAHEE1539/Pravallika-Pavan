@@ -4,9 +4,9 @@ import './App.css';
 // Main App: multi-scene romantic experience
 export default function App() {
   const [scene, setScene] = useState(0); // 0: Landing,1: Letter,2: Question,3: Memory,4: Celebration
-  const [noAttempts, setNoAttempts] = useState(0);
+  const [, setNoAttempts] = useState(0);
   const [noHint, setNoHint] = useState('No 😢');
-  const [noSpeed, setNoSpeed] = useState(0.6); // transition duration (lower = faster)
+  const [noSpeed] = useState(0.6); // transition duration (lower = faster)
   const containerRef = useRef(null);
   const scenesContainerRef = useRef(null);
   const scenesRefs = useRef([]);
